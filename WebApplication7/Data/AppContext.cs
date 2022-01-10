@@ -13,9 +13,9 @@ namespace WebApplication7.Data
         {
         }
 
-        public DbSet<Employee> Employees;
+        public DbSet<Employee> Employees { get; set; }
 
-        public DbSet<Position> Positions;
+        public DbSet<Position> Positions { get; set; }
 
     }
 }

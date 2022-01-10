@@ -136,3 +136,15 @@ C:\Users\tu201806253\source\repos\WebApplication7\WebApplication7\obj\Debug\net5
 C:\Users\tu201806253\source\repos\WebApplication7\WebApplication7\obj\Debug\net5.0\ref\WebApplication7.dll
 C:\Users\tu201806253\source\repos\WebApplication7\WebApplication7\obj\Debug\net5.0\WebApplication7.pdb
 C:\Users\tu201806253\source\repos\WebApplication7\WebApplication7\obj\Debug\net5.0\WebApplication7.genruntimeconfig.cache
+C:\Users\tu201806253\source\repos\WebApplication7\WebApplication7\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\tu201806253\source\repos\WebApplication7\WebApplication7\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\Users\tu201806253\source\repos\WebApplication7\WebApplication7\bin\Debug\net5.0\dotnet-aspnet-codegenerator-design.dll
+C:\Users\tu201806253\source\repos\WebApplication7\WebApplication7\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\tu201806253\source\repos\WebApplication7\WebApplication7\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
+C:\Users\tu201806253\source\repos\WebApplication7\WebApplication7\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
+C:\Users\tu201806253\source\repos\WebApplication7\WebApplication7\obj\Debug\net5.0\Razor\Areas\admin\Views\Home\Index.cshtml.g.cs
+C:\Users\tu201806253\source\repos\WebApplication7\WebApplication7\obj\Debug\net5.0\Razor\Areas\admin\Views\Shared\Error.cshtml.g.cs
+C:\Users\tu201806253\source\repos\WebApplication7\WebApplication7\obj\Debug\net5.0\Razor\Areas\admin\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\tu201806253\source\repos\WebApplication7\WebApplication7\obj\Debug\net5.0\Razor\Areas\admin\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\tu201806253\source\repos\WebApplication7\WebApplication7\obj\Debug\net5.0\Razor\Areas\admin\Views\_ViewImports.cshtml.g.cs
+C:\Users\tu201806253\source\repos\WebApplication7\WebApplication7\obj\Debug\net5.0\Razor\Areas\admin\Views\_ViewStart.cshtml.g.cs

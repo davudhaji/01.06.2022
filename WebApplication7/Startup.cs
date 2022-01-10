@@ -25,6 +25,9 @@ namespace WebApplication7
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddMvc()
+        .AddSessionStateTempDataProvider();
+            services.AddSession();
             services.AddControllersWithViews();
 
             services.AddDbContext<Data.AppContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("EmployeeCS")));
@@ -44,12 +47,15 @@ namespace WebApplication7
             {
                 app.UseExceptionHandler("/Home/Error");
             }
-            app.UseHttpsRedirection();
 
+
+            app.UseHttpsRedirection();
             app.UseStaticFiles();
+            app.UseSession();
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
 
@@ -57,6 +63,12 @@ namespace WebApplication7
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapAreaControllerRoute(
+                   name: "Areas",
+                   areaName: "admin",
+                   pattern: "admin/{controller=Home}/{action=Index}/{id?}"
+                   );
+
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
