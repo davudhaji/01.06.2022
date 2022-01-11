@@ -26,8 +26,15 @@ using WebApplication7.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\tu201806253\source\repos\WebApplication7\WebApplication7\Areas\admin\Views\_ViewImports.cshtml"
+using WebApplication7.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b393b8ff831cd941564dc08fb8e3060765ec70f4", @"/Areas/admin/Views/Home/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b7dc31cafed32aad956e8e002afa406e7283b5ab", @"/Areas/admin/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0e23e47b353a3be86e93a4b2a12d21f3a81f1ac2", @"/Areas/admin/Views/_ViewImports.cshtml")]
     public class Areas_admin_Views_Home_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -72,7 +79,7 @@ using WebApplication7.Models;
 
             <!-- Topbar Search -->
             ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b393b8ff831cd941564dc08fb8e3060765ec70f44660", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b393b8ff831cd941564dc08fb8e3060765ec70f44879", async() => {
                 WriteLiteral(@"
                 <div class=""input-group"">
                     <input type=""text"" class=""form-control bg-light border-0 small"" placeholder=""Search for...""
@@ -113,7 +120,7 @@ using WebApplication7.Models;
                     <div class=""dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in""
                          aria-labelledby=""searchDropdown"">
                         ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b393b8ff831cd941564dc08fb8e3060765ec70f47275", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b393b8ff831cd941564dc08fb8e3060765ec70f47494", async() => {
                 WriteLiteral(@"
                             <div class=""input-group"">
                                 <input type=""text"" class=""form-control bg-light border-0 small""

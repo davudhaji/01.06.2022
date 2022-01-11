@@ -10,7 +10,11 @@ namespace WebApplication7.Areas.admin.Controllers
     {
         public IActionResult Index()
         {
+
             return View();
         }
+
+
+        
     }
 }

@@ -17,5 +17,7 @@ namespace WebApplication7.Data
 
         public DbSet<Position> Positions { get; set; }
 
+        public DbSet<CustomUser> customUsers { get; set; }
+
     }
 }
