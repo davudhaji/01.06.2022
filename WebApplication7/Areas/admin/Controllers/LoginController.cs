@@ -15,11 +15,11 @@ namespace WebApplication7.Areas.admin.Controllers
     {
         
         private readonly Data.AppContext _context;
-        private readonly UserManager<IdentityUser> _userManager;
-        private readonly SignInManager<IdentityUser> _signInManager;
+        private readonly UserManager<CustomUser> _userManager;
+        private readonly SignInManager<CustomUser> _signInManager;
 
 
-        public LoginController(Data.AppContext context, UserManager<IdentityUser> userManager, SignInManager<IdentityUser> signInManager)
+        public LoginController(Data.AppContext context, UserManager<CustomUser> userManager, SignInManager<CustomUser> signInManager)
         {
             _context = context;
             _userManager = userManager;
@@ -34,7 +34,7 @@ namespace WebApplication7.Areas.admin.Controllers
         [HttpPost]
         public async Task<IActionResult> Register(VmUser model)
         {
-            if (ModelState.IsValid && ! _context.customUsers.Any(u => u.UserName == model.UserName))
+            if (ModelState.IsValid && !_context.customUsers.Any(u => u.UserName == model.UserName))
             {
                 CustomUser customUser = new CustomUser()
                 {

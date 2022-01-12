@@ -152,3 +152,5 @@ C:\Users\tu201806253\source\repos\WebApplication7\WebApplication7\bin\Debug\net5
 C:\Users\tu201806253\source\repos\WebApplication7\WebApplication7\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\tu201806253\source\repos\WebApplication7\WebApplication7\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\tu201806253\source\repos\WebApplication7\WebApplication7\obj\Debug\net5.0\Razor\Areas\admin\Views\Login\Register.cshtml.g.cs
+C:\Users\tu201806253\source\repos\WebApplication7\WebApplication7\obj\Debug\net5.0\WebApplication7.csproj.AssemblyReference.cache
+C:\Users\tu201806253\source\repos\WebApplication7\WebApplication7\obj\Debug\net5.0\Razor\Views\About\Index.cshtml.g.cs

@@ -10,6 +10,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Identity;
+using WebApplication7.Models;
 
 namespace WebApplication7
 {
@@ -34,6 +36,8 @@ namespace WebApplication7
             
 
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddIdentity<CustomUser, IdentityRole>().AddEntityFrameworkStores<Data.AppContext>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -46,6 +50,8 @@ namespace WebApplication7
             else
             {
                 app.UseExceptionHandler("/Home/Error");
+
+                app.UseHsts();
             }
 
 
@@ -71,7 +77,7 @@ namespace WebApplication7
 
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=About}/{action=Index}/{id?}");
             });
         }
     }

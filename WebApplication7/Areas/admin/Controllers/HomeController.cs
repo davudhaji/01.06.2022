@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace WebApplication7.Areas.admin.Controllers
 {
+    [Area("admin")]
     public class HomeController : Controller
     {
         public IActionResult Index()

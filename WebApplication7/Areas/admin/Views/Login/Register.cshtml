@@ -1,4 +1,7 @@
 ﻿@model VmUser
+@{ 
+    Layout = null;
+}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -14,12 +17,12 @@
     <title>SB Admin 2 - Register</title>
 
     <!-- Custom fonts for this template-->
-    <link href="~admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="~/admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
             rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="~/admin/css/sb-admin-2.min.css" rel="stylesheet">
 
 </head>
 
@@ -37,41 +40,33 @@
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
                             </div>
-                            <form class="user">
+                            <form class="user" asp-area="admin" asp-controller="login" asp-action="register">
+                                <div asp-validation-summary="All" class="text-danger"></div>
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0">
-                                        <input type="text" class="form-control form-control-user" id="exampleFirstName"
-                                                placeholder="First Name">
+                                        <input asp-for="@Model.FullName" class="form-control form-control-user" placeholder="Full Name">
+                                        <span asp-validation-for="@Model.FullName"></span>
                                     </div>
                                     <div class="col-sm-6">
-                                        <input type="text" class="form-control form-control-user" id="exampleLastName"
-                                                placeholder="Last Name">
+                                        <input asp-for="@Model.UserName" class="form-control form-control-user" placeholder="Username">
+                                        <span asp-validation-for="@Model.UserName"></span>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control form-control-user" id="exampleInputEmail"
-                                            placeholder="Email Address">
+                                    <input asp-for="@Model.Email" class="form-control form-control-user" placeholder="Email">
+                                    <span asp-validation-for="@Model.Email"></span>
                                 </div>
                                 <div class="form-group row">
-                                    <div class="col-sm-6 mb-3 mb-sm-0">
-                                        <input type="password" class="form-control form-control-user"
-                                                id="exampleInputPassword" placeholder="Password">
+                                    <div class="col-sm-6 mb-3 mb-sm-0"> 
+                                        <input asp-for="@Model.Password"  type="password" class="form-control form-control-user" placeholder="Password">
+                                        <span asp-validation-for="@Model.Password"></span>
                                     </div>
-                                    <div class="col-sm-6">
-                                        <input type="password" class="form-control form-control-user"
-                                                id="exampleRepeatPassword" placeholder="Repeat Password">
-                                    </div>
+                                    
                                 </div>
-                                <a href="login.html" class="btn btn-primary btn-user btn-block">
-                                    Register Account
-                                </a>
-                                <hr>
-                                <a href="index.html" class="btn btn-google btn-user btn-block">
-                                    <i class="fab fa-google fa-fw"></i> Register with Google
-                                </a>
-                                <a href="index.html" class="btn btn-facebook btn-user btn-block">
-                                    <i class="fab fa-facebook-f fa-fw"></i> Register with Facebook
-                                </a>
+                                <button type="submit" class="btn btn-primary btn-user btn-block">
+                                    Register
+                                </button>
+                                
                             </form>
                             <hr>
                             <div class="text-center">
@@ -89,14 +84,14 @@
     </div>
 
     <!-- Bootstrap core JavaScript-->
-    <script src="~admin/vendor/jquery/jquery.min.js"></script>
-    <script src="~admin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/adminvendor/jquery/jquery.min.js"></script>
+    <script src="~/admin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="~admin/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="~/admin/vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="~admin/js/sb-admin-2.min.js"></script>
+    <script src="~/admin/js/sb-admin-2.min.js"></script>
 
 </body>
 
