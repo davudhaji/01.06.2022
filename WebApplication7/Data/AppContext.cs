@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using WebApplication7.Models;
 
 namespace WebApplication7.Data
 {
-    public class AppContext: DbContext
+    public class AppContext: IdentityDbContext
     {
         public AppContext(DbContextOptions<AppContext> options) : base(options)
         {
