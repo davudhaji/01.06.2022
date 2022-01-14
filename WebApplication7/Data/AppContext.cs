@@ -20,5 +20,12 @@ namespace WebApplication7.Data
 
         public DbSet<CustomUser> customUsers { get; set; }
 
+        public DbSet<Social> socials { get; set; }
+        
+        public DbSet<Footer> footers { get; set; }
+
+        public DbSet<SocialIcons> socialIcons { get; set; }
+        public DbSet<Topbar> Topbars { get; set; }
+
     }
 }

@@ -63,8 +63,46 @@ namespace WebApplication7.Areas.admin.Controllers
 
 
             }
-            ModelState.AddModelError("", "Customer is not valid");
+            ModelState.AddModelError("", "This username is exsist");
             return View(model);
         }
+
+
+        public IActionResult Login()
+        {
+
+
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Login (VmUser model)
+        {
+            if (ModelState.IsValid)
+            {
+                var result = await _signInManager.PasswordSignInAsync(model.UserName, model.Password, false, false);
+
+                if (result.Succeeded)
+                {
+                    return RedirectToAction("index", "home");
+                }
+                else
+                {
+                    ModelState.AddModelError("", "Email or password is not valid");
+                    return View(model);
+                }
+            }
+            return View(model);
+        }
+
+
+
+        public async Task<IActionResult> Logout()
+        {
+            await _signInManager.SignOutAsync();
+
+            return RedirectToAction("login");
+        }
+
     }
 }
